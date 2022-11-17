@@ -11,8 +11,13 @@ variable "request_type" {
 
 variable "requested_validity" {
   type        = number
-  default     = 1095
+  default     = 5475
   description = "The number of days for which the certificate should be valid."
+
+  validation {
+    condition     = contains([7, 30, 90, 365, 730, 1095, 5475], var.requested_validity)
+    error_message = "Expected requested_validity to be one of 7, 30, 90, 365, 730, 1095, 5475"
+  }
 }
 
 variable "tls_cert_request_subject" {
@@ -29,6 +34,7 @@ variable "tls_cert_request_subject" {
       street_address      = optional(list(string))
     }
   )
+  default     = {}
   description = <<-DOC
     An options for tls cert request subject.
     common_name:

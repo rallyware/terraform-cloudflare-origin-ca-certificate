@@ -15,7 +15,7 @@ resource "tls_cert_request" "default" {
     postal_code         = var.tls_cert_request_subject["postal_code"]
     province            = var.tls_cert_request_subject["province"]
     serial_number       = var.tls_cert_request_subject["serial_number"]
-    street_address      = var.tls_cert_request_subject["street_address "]
+    street_address      = var.tls_cert_request_subject["street_address"]
   }
 }
 
