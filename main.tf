@@ -3,7 +3,6 @@ resource "tls_private_key" "default" {
 }
 
 resource "tls_cert_request" "default" {
-  key_algorithm   = tls_private_key.default.algorithm
   private_key_pem = tls_private_key.default.private_key_pem
   dns_names       = var.hostnames
 
