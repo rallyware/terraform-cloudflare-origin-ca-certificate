@@ -29,4 +29,25 @@ variable "tls_cert_request_subject" {
       street_address      = optional(list(string))
     }
   )
+  description = <<-DOC
+    An options for tls cert request subject.
+    common_name:
+        Distinguished name: CN
+    country:
+        Distinguished name: C
+    locality:
+        Distinguished name: L
+    organization:
+        Distinguished name: O
+    organizational_unit:
+        Distinguished name: OU
+    postal_code:
+        Distinguished name: PC
+    province:
+        Distinguished name: ST
+    serial_number:
+        Distinguished name: SERIALNUMBER
+    street_address:
+        Distinguished name: STREET
+  DOC
 }
