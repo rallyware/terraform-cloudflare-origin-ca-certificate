@@ -16,7 +16,8 @@ output:
   file: README.md
   mode: replace
   template: |-
-    # terraform-module-template
+    # terraform-cloudflare-origin-ca-certificate
+    Terraform module to provision Cloudflare Origin CA certificate used to protect traffic to your origin without involving a third party Certificate Authority.
 
     <!-- BEGIN_TF_DOCS -->
     {{ .Content }}
