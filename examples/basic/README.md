@@ -1,7 +1,11 @@
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
+| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | >= 3.0 |
+| <a name="requirement_tls"></a> [tls](#requirement\_tls) | >= 3.0 |
 
 ## Providers
 
@@ -11,7 +15,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_aweasome_module"></a> [aweasome\_module](#module\_aweasome\_module) | ../../ | n/a |
+| <a name="module_origin_ca"></a> [origin\_ca](#module\_origin\_ca) | ../../ | n/a |
 
 ## Resources
 
