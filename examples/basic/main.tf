@@ -1,6 +1,5 @@
-module "aweasome_module" {
-  source    = "../../"
-  name      = "aweasome"
-  stage     = "production"
-  namespace = "sweetops"
+module "origin_ca" {
+  source = "../../"
+
+  hostnames = ["*.rallyware.com"]
 }
